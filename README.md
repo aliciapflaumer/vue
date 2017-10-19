@@ -7,7 +7,7 @@ Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user 
 
 By the end of this, developers should be able to:
 
--   Explain what Vue is and what kinds of applications it's used for..
+-   Explain what Vue is and what kinds of applications it's used for.
 -   Create new applications with Vue using the vue-cli.
 -   Name and describe the different layers of a Vue application.
 
@@ -25,9 +25,10 @@ $ npm run dev
 ```
 
 [Get the Chrome Extension](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
 [Get the Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
-## Advantages of JavaScript Frameworks
+## Advantages of JavaScript Front-end Frameworks
 - Efficiency: Projects can be created much faster with well-structured, pre-built
 patterns and functions.
 - Safety: Popular framweworks have built-in security and are supported by large
@@ -49,35 +50,36 @@ Angular2 and React), Vue-cli, and JSX support.
 
 * JSX is a statically-typed, object-oriented programming language compiling to standalone JavaScript. JSX is, however, fairly close to JavaScript especially in its statements and expressions.
 
-## Reactive Interfaces
+## Vue Features
+### Reactive Interfaces
 Reactive user interfaces separate UI State (the Data) from the underlying layout of the user’s visual experience (the DOM). In Vue, models are just plain JavaScript objects. When you modify them, the view updates.
 
-## Declarative Rendering
+### Declarative Rendering
 The core of Vue.js is a system that enables us to declaratively render data to
 the DOM using template syntax. The data and DOM are linked and everything is
 reactive.
 
-## Template Logic
+### Template Logic
 Vue has HTML-based template syntax, the template are valid HTML. Vue compiles the templates into Virtual DOM render functions. Combined with the reactivity system, Vue figures out the minimal amount of components to re-render and apply the minimum amount of DOM manipulations when the app state changes.
 
-### Text
+#### Text
 Interpolations use Mustache syntax
 ```html
 <span>Message: {{ msg }}</span>
 ```
 
-### Attributes
+#### Attributes
 Setting attributes uses the v-bind directive
 ```html
 <div v-bind:id='dynamicId'></div>
 ```
-## Component System
+### Component System
 Vue's component system lets us build applications composed of small, self-contained, re-usable components.
 ![Component Tree](component-tree.png)
 A component is a Vue instance with pre-defined options. Vue components are similar
 to Custom Elements (a method for enableing users to define and use new types of DOM elements) which are part of the [Web Components Spec](https://www.w3.org/wiki/WebComponents/).
 
-## Event Handling
+### Event Handling
 We can use the v-on directive to listen to DOM events and run some JavaScript when they’re triggered.
 ```html
 <div id="example-2">
@@ -104,7 +106,7 @@ var example2 = new Vue({
   }
 })
 ```
-## List Rendering
+### List Rendering
 We can use the v-for directive to render a list of items based on an array. The v-for directive requires a special syntax in the form of item in items, where items is the source data array and item is an alias for the array element being iterated on.
 ```html
 <ul id="example-1">
@@ -140,7 +142,7 @@ computed: {
   }
 }
 ```
-## Computed Properties
+### Computed Properties
 Computed properties are use for complex logic. Computed properties are cached based on their dependencies and are only re-computed when needed
 ```html
 <div id="example">
@@ -199,5 +201,4 @@ This file is the implementation of the App component. The implementation is brok
 ## Additional Resources
 
 -  "The Docs" - [Vue.js](https://vuejs.org/)
--  [5 Practical Examples for Learning Vue.js](https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js
-- )
+-  [5 Practical Examples for Learning Vue.js](https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js)
