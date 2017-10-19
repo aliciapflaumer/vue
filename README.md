@@ -174,12 +174,19 @@ let vm = new Vue({ })
 A Vue application consist of a root Vue instance, organized into a tree of nested, reusable components which are also Vue instances.
 
 Root Instance
+
   |- ToDoList
+
     |- ToDoItem
+
       |- DeleteToDoButton
+
       |- EditToDoButton
+
   |- ToDoListFooter
+
     |- ClearToDosButton
+    
     |- ToDoListStatistics
 
 When a Vue instance is created, it adds all the properties found in its data object to Vue's reactivity system.  When the values of those properties change, the view will "react", updating to match new values.
